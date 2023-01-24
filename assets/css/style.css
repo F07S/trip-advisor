@@ -1,0 +1,24 @@
+body {
+  font-family: Trip-M, sans-serif;
+  width: 1135px;
+  margin: auto;
+  background-color: grey;
+}
+
+/* HEADER */
+/* *****************************************/
+header {
+  height: 90px;
+  background-color: white;
+  margin-top: 165px;
+}
+header img {
+  height: 40px;
+}
+
+/* MAIN */
+/* *****************************************/
+
+h1 {
+  font-size: 40px;
+}
