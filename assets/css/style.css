@@ -1,50 +1,68 @@
+/* GENERAL */
+/* *****************************************/
+
 body {
   font-family: Trip-M, sans-serif;
   width: 1135px;
-  margin: auto;
+  margin: 0 auto;
   /* background-color: grey; */
 }
 
 /* HEADER */
 /* *****************************************/
+
 header {
-  height: 100px;
   background-color: white;
-  margin-top: 150px;
+  padding-top: 280px;
+}
+
+.headerBlock {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 2px;
-  padding-right: 2px;
-}
-header img {
-  height: 40px;
 }
 
-header span {
-  padding: 0 15px;
-}
-.topline {
-  font-size: 17px;
-  display: flex;
-  align-items: center;
+/* HEADER LOGO */
+/* *****************************************/
+
+.headerBlock img {
+  width: 190px;
 }
 
-.topline i {
-  padding-right: 5px;
-}
+/* HEADER NAV */
+/* *****************************************/
 
-.button {
+header button {
   color: white;
-  font-size: 17px;
+  font-size: 16px;
   background-color: black;
-  height: 40px;
-  width: 150px;
   border-radius: 30px;
+  padding: 5px 20px;
+  border: none;
   text-align: center;
-  padding-top: 10px;
 }
 
+header a {
+  padding: 7px 10px;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+header a:hover {
+  padding: 7px 10px;
+  border-radius: 30px;
+  /* border: 1px solid black; */
+  background-color: #ededed;
+  text-decoration: none;
+}
+
+header nav span {
+  font-size: 16px;
+}
+
+header nav i {
+  padding-right: 10px;
+}
 /* MAIN */
 /* *****************************************/
 
@@ -57,26 +75,30 @@ span {
 }
 
 main {
-  padding-top: 20px;
+  padding-top: 60px;
   background-color: white;
 }
 
-.title-note {
+.titleNote {
   margin-top: 15px;
   font-size: 14px;
   font-family: Trip-R, sans-serif;
   color: #333333;
 }
 
-main .categories {
-  padding-top: 35px;
+/* MAIN MENU */
+/* *****************************************/
+.categories {
   display: flex;
-  flex: 1;
+  width: 1135px;
+}
+main a {
+  padding-top: 20px;
 }
 
 .cat-button {
   font-size: 16px;
-  width: 180px;
+  width: 152px;
   height: 65px;
   border: 1px solid black;
   background-color: white;
@@ -84,21 +106,42 @@ main .categories {
   padding: 15px;
   display: flex;
   justify-content: space-between;
+  margin: 0 5px;
+}
+.cat-button:hover {
+  border: 1px solid black;
+  background-color: black;
+}
+main nav a {
+  text-decoration: none;
+  color: black;
 }
 
+main nav a:hover {
+  text-decoration: none;
+  color: white;
+}
+/* IMAGE BLOCK */
+/* *****************************************/
 .beach {
   width: 650px;
   height: 440px;
   object-fit: cover;
+  padding-right: 2px;
 }
 
-.side-pics img {
+.side img {
   width: 480px;
   height: 220px;
   object-fit: cover;
+  object-position: center;
 }
 
-.side-pics {
+.brighton {
+  padding-bottom: 2px;
+}
+
+.side {
   display: flex;
   flex-direction: column;
 }
@@ -108,6 +151,19 @@ main .categories {
   padding-top: 40px;
   align-items: center;
 }
+
+.beach:hover {
+  opacity: 0.5;
+}
+.brighton:hover {
+  opacity: 0.5;
+}
+.flinders:hover {
+  opacity: 0.5;
+}
+
+/* IMAGE BLOCK NAV */
+/* *****************************************/
 nav span {
   font-size: 12px;
   font-family: Trip-R, sans-serif;
@@ -117,12 +173,14 @@ nav span {
 nav {
   margin-top: 25px;
 }
+/* ARTICLE & MAP SECTION */
+/* *****************************************/
 
 main .capital {
   padding-top: 60px;
 }
 
-.capital {
+h2 {
   font-size: 28px;
 }
 
@@ -133,3 +191,339 @@ main .capital {
   line-height: 24px;
   margin-top: 30px;
 }
+
+.topMap {
+  width: 460px;
+  height: 260px;
+  background-color: #ff5d5d;
+  padding: 30px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.mapBox img {
+  width: 460px;
+  height: 200px;
+  object-fit: cover;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.topMap h3 {
+  font-size: 30px;
+  font-family: Trip-R, sans-serif;
+}
+
+.topMap p {
+  padding-top: 20px;
+  padding-bottom: 25px;
+  font-size: 15px;
+  font-family: Trip-R, sans-serif;
+}
+
+.voyageButton {
+  padding: 18px;
+  color: white;
+  font-size: 14px;
+  background-color: #333333;
+  width: 150px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+}
+
+.mapBox {
+  padding-left: 120px;
+  padding-top: 50px;
+}
+
+/* IMAGE BLOCK NAV */
+/* *****************************************/
+nav span {
+  font-size: 12px;
+  font-family: Trip-R, sans-serif;
+  color: #333333;
+}
+
+nav {
+  margin-top: 25px;
+}
+/* ARTICLE & MAP SECTION */
+/* *****************************************/
+
+main .capital {
+  padding-top: 60px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+.text {
+  font-size: 20px;
+  font-family: Trip-R, sans-serif;
+  color: #333333;
+  line-height: 24px;
+  margin-top: 30px;
+}
+
+.topMap {
+  width: 460px;
+  height: 260px;
+  background-color: #ff5d5d;
+  padding: 30px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.mapBox img {
+  width: 460px;
+  height: 200px;
+  object-fit: cover;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.topMap h3 {
+  font-size: 30px;
+  font-family: Trip-R, sans-serif;
+}
+
+.topMap p {
+  padding-top: 20px;
+  padding-bottom: 25px;
+  font-size: 15px;
+  font-family: Trip-R, sans-serif;
+}
+
+.voyageButton {
+  padding: 18px;
+  color: white;
+  font-size: 14px;
+  background-color: #333333;
+  width: 150px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+}
+
+.mapBox {
+  padding-left: 120px;
+  padding-top: 50px;
+}
+/* MUST SEE SECTION WITHOUT LOGO AND HEART*/
+/* *****************************************/
+.mustSee {
+  padding-top: 30px;
+  display: flex;
+}
+.mustTitle {
+  line-height: 34px;
+  padding-top: 30px;
+}
+h4 {
+  font-size: 24px;
+  line-height: 30px;
+}
+.mustSee p {
+  padding-top: 30px;
+  padding-right: 60px;
+  font-family: Trip-R, sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  color: #333333;
+}
+
+.items {
+  /* border: 1px solid black; */
+  height: 305px;
+  width: 1800px;
+  display: flex;
+  overflow-x: scroll;
+  gap: 10px;
+}
+
+.items div {
+  width: 270;
+  width: 32.5%;
+  height: 305px;
+  /* border: 1px solid #ff5d5d; */
+  flex-shrink: 0;
+}
+
+.items img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: top;
+  padding-bottom: 5px;
+}
+
+.items img:hover {
+  opacity: 0.5;
+}
+
+div span {
+  font-size: 18px;
+  line-height: 25px;
+  color: black;
+}
+
+div span:hover {
+  text-decoration: underline;
+}
+/* MUST SEE "DIVERTIR "SECTION WITH LOGO AND HEART*/
+/* *****************************************/
+.mustSeeR {
+  padding-top: 30px;
+  display: flex;
+}
+.mustTitle {
+  line-height: 34px;
+  padding-top: 30px;
+}
+h4 {
+  font-size: 24px;
+  line-height: 30px;
+}
+.mustSeeR p {
+  padding-top: 30px;
+  padding-right: 60px;
+  font-family: Trip-R, sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  color: #333333;
+}
+
+.elements {
+  /* border: 1px solid black; */
+  height: 305px;
+  width: 1800px;
+  display: flex;
+  overflow-x: scroll;
+  gap: 10px;
+}
+
+.elements li {
+  width: 270;
+  width: 32.5%;
+  height: 305px;
+  /* border: 1px solid #ff5d5d; */
+  flex-shrink: 0;
+  position: relative;
+}
+
+.elements i {
+  position: absolute;
+  top: 23px;
+  right: 20px;
+  z-index: 1;
+  font-size: 20px;
+}
+
+.elements div {
+  position: absolute;
+  top: 12px;
+  left: 210px;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50px;
+}
+
+.elements img {
+  position: absolute;
+  width: 35px;
+  bottom: 117px;
+  left: 7px;
+}
+
+li span {
+  font-size: 18px;
+  line-height: 25px;
+  position: relative;
+  top: 200px;
+  color: black;
+}
+li:hover {
+  opacity: 0.5;
+}
+
+.elements .dots1 {
+  position: absolute;
+  top: 253px;
+  left: 0px;
+  width: 68px;
+}
+
+.elements .dots {
+  position: absolute;
+  top: 227px;
+  left: 0px;
+  width: 68px;
+}
+
+li.bgcImg1 {
+  width: 260px;
+  height: 305px;
+  background-image: url(../img/botanical.jpeg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-bottom: 5px;
+}
+
+li.bgcImg2 {
+  width: 260px;
+  height: 305px;
+  background-image: url(../img/cup.jpeg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-bottom: 5px;
+}
+
+li.bgcImg3 {
+  width: 260px;
+  height: 305px;
+  background-image: url(../img/museum.jpeg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-bottom: 5px;
+}
+
+li.bgcImg5 {
+  width: 260px;
+  height: 305px;
+  background-image: url(../img/zoo.jpeg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-bottom: 5px;
+}
+
+li.bgcImg6 {
+  width: 260px;
+  height: 305px;
+  background-image: url(../img/koorie.jpeg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-bottom: 5px;
+}
+
+li.bgcImg8 {
+  width: 260px;
+  height: 305px;
+  background-image: url(../img/ngv.jpeg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-bottom: 5px;
+}
+
+/* MUST SEE "REPOSER" SECTION WITH LOGO AND HEART*/
+/* *****************************************/
