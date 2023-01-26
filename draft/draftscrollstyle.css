@@ -1,0 +1,225 @@
+/* MUST SEE SECTION */
+/* *****************************************/
+.mustSee {
+  padding-top: 30px;
+  display: flex;
+}
+.mustTitle {
+  line-height: 34px;
+  padding-top: 30px;
+}
+h4 {
+  font-size: 24px;
+  line-height: 30px;
+}
+.mustSee p {
+  padding-top: 30px;
+  padding-right: 60px;
+  font-family: Georgia, sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  color: #333333;
+}
+
+.items {
+  /* border: 1px solid black; */
+  height: 305px;
+  width: 1800px;
+  display: flex;
+  overflow-x: scroll;
+  gap: 10px;
+}
+
+.items div {
+  width: 270;
+  width: 32.5%;
+  height: 305px;
+  /* border: 1px solid #ff5d5d; */
+  flex-shrink: 0;
+}
+
+.items img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: top;
+  padding-bottom: 5px;
+}
+
+.items img:hover {
+  opacity: 0.5;
+}
+
+div span {
+  font-size: 18px;
+  line-height: 25px;
+  color: black;
+}
+
+div span:hover {
+  text-decoration: underline;
+}
+
+/* MUST SEE "DIVERTIR "SECTION WITH LOGO AND HEART*/
+/* *****************************************/
+.mustSeeR {
+  padding-top: 30px;
+  display: flex;
+}
+.mustTitle {
+  line-height: 34px;
+  padding-top: 30px;
+}
+h4 {
+  font-size: 24px;
+  line-height: 30px;
+}
+.mustSeeR p {
+  padding-top: 30px;
+  padding-right: 60px;
+  font-family: Trip-R, sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  color: #333333;
+}
+
+.elements {
+  /* border: 1px solid black; */
+  height: 305px;
+  width: 1800px;
+  display: flex;
+  overflow-x: scroll;
+  gap: 10px;
+}
+
+.elements li {
+  width: 270;
+  width: 32.5%;
+  height: 305px;
+  /* border: 1px solid #ff5d5d; */
+  flex-shrink: 0;
+  position: relative;
+}
+
+.elements i {
+  position: absolute;
+  top: 23px;
+  right: 20px;
+  z-index: 1;
+  font-size: 20px;
+}
+
+.elements div {
+  position: absolute;
+  top: 12px;
+  left: 210px;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50px;
+}
+
+.elements img {
+  position: absolute;
+  width: 35px;
+  bottom: 117px;
+  left: 7px;
+}
+
+li span {
+  font-size: 18px;
+  line-height: 25px;
+  position: relative;
+  top: 200px;
+  color: black;
+}
+li:hover {
+  opacity: 0.5;
+}
+
+.elements .dots1 {
+  position: absolute;
+  top: 253px;
+  left: 0px;
+  width: 68px;
+}
+
+.elements .dots {
+  position: absolute;
+  top: 227px;
+  left: 0px;
+  width: 68px;
+}
+
+.revNum1 span {
+  position: absolute;
+  top: 236px;
+  right: 145px;
+  font-size: 12px;
+  color: #696969;
+}
+
+.revNum span {
+  position: absolute;
+  top: 210px;
+  right: 145px;
+  font-size: 12px;
+  color: #696969;
+}
+
+li.bgcImg1 {
+  width: 260px;
+  height: 305px;
+  background-image: url(../img/botanical.jpeg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-bottom: 5px;
+}
+
+li.bgcImg2 {
+  width: 260px;
+  height: 305px;
+  background-image: url(../img/cup.jpeg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-bottom: 5px;
+}
+
+li.bgcImg3 {
+  width: 260px;
+  height: 305px;
+  background-image: url(../img/museum.jpeg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-bottom: 5px;
+}
+
+li.bgcImg5 {
+  width: 260px;
+  height: 305px;
+  background-image: url(../img/zoo.jpeg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-bottom: 5px;
+}
+
+li.bgcImg6 {
+  width: 260px;
+  height: 305px;
+  background-image: url(../img/koorie.jpeg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-bottom: 5px;
+}
+
+li.bgcImg8 {
+  width: 260px;
+  height: 305px;
+  background-image: url(../img/ngv.jpeg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-bottom: 5px;
+}
+
+/* MUST SEE "REPOSER" SECTION WITH LOGO AND HEART*/
+/* *****************************************/

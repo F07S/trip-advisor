@@ -13,10 +13,16 @@ body {
 
 header {
   background-color: white;
-  padding-top: 280px;
+  /* border: #333333 2px solid; */
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  width: 1135px;
 }
 
-.headerBlock {
+header .headerBlock {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -45,10 +51,11 @@ header button {
 header a {
   padding: 7px 10px;
   border-radius: 30px;
+  color: black;
   text-decoration: none;
 }
 
-header a:hover {
+.headerBlock a:hover {
   padding: 7px 10px;
   border-radius: 30px;
   /* border: 1px solid black; */
@@ -63,7 +70,7 @@ header nav span {
 header nav i {
   padding-right: 10px;
 }
-/* MAIN */
+/* TOP MAIN */
 /* *****************************************/
 
 span {
@@ -75,7 +82,7 @@ span {
 }
 
 main {
-  padding-top: 60px;
+  padding-top: 150px;
   background-color: white;
 }
 
@@ -117,39 +124,39 @@ main nav a {
   color: black;
 }
 
-main nav a:hover {
+.categories a:hover {
   text-decoration: none;
   color: white;
 }
 /* IMAGE BLOCK */
 /* *****************************************/
-.beach {
-  width: 650px;
-  height: 440px;
-  object-fit: cover;
-  padding-right: 2px;
+
+.pictures {
+  height: 430px;
+  display: flex;
+  padding-top: 40px;
+  gap: 2px;
+}
+.pictures .beach {
+  height: 100%;
+  flex: 1;
 }
 
-.side img {
+.pictures .side {
+  height: 100%;
   width: 480px;
-  height: 220px;
+}
+
+.pictures img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: center;
 }
 
-.brighton {
-  padding-bottom: 2px;
-}
-
-.side {
-  display: flex;
-  flex-direction: column;
-}
-
-.pictures {
-  display: flex;
-  padding-top: 40px;
-  align-items: center;
+.pictures .side {
+  /* width: 100%; */
+  height: calc(50% - 1px);
 }
 
 .beach:hover {
@@ -162,368 +169,317 @@ main nav a:hover {
   opacity: 0.5;
 }
 
-/* IMAGE BLOCK NAV */
+/* BREADCRUMB */
 /* *****************************************/
-nav span {
+.belowPic {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.breadcrum {
   font-size: 12px;
   font-family: Trip-R, sans-serif;
   color: #333333;
 }
-
-nav {
-  margin-top: 25px;
-}
-/* ARTICLE & MAP SECTION */
-/* *****************************************/
-
-main .capital {
-  padding-top: 60px;
-}
-
-h2 {
-  font-size: 28px;
-}
-
-.text {
-  font-size: 20px;
-  font-family: Trip-R, sans-serif;
-  color: #333333;
-  line-height: 24px;
-  margin-top: 30px;
-}
-
-.topMap {
-  width: 460px;
-  height: 260px;
-  background-color: #ff5d5d;
-  padding: 30px;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-}
-
-.mapBox img {
-  width: 460px;
-  height: 200px;
-  object-fit: cover;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-}
-
-.topMap h3 {
-  font-size: 30px;
-  font-family: Trip-R, sans-serif;
-}
-
-.topMap p {
-  padding-top: 20px;
-  padding-bottom: 25px;
-  font-size: 15px;
-  font-family: Trip-R, sans-serif;
-}
-
-.voyageButton {
-  padding: 18px;
-  color: white;
-  font-size: 14px;
-  background-color: #333333;
-  width: 150px;
-  border-radius: 20px;
-  text-align: center;
-}
-
-.description {
-  display: flex;
-  justify-content: center;
-}
-
-.mapBox {
-  padding-left: 120px;
-  padding-top: 50px;
-}
-
-/* IMAGE BLOCK NAV */
-/* *****************************************/
-nav span {
+.belowPic span {
   font-size: 12px;
   font-family: Trip-R, sans-serif;
   color: #333333;
 }
-
-nav {
-  margin-top: 25px;
-}
-/* ARTICLE & MAP SECTION */
-/* *****************************************/
-
-main .capital {
-  padding-top: 60px;
-}
-
-h2 {
-  font-size: 28px;
-}
-
-.text {
-  font-size: 20px;
-  font-family: Trip-R, sans-serif;
-  color: #333333;
-  line-height: 24px;
-  margin-top: 30px;
-}
-
-.topMap {
-  width: 460px;
-  height: 260px;
-  background-color: #ff5d5d;
-  padding: 30px;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-}
-
-.mapBox img {
-  width: 460px;
-  height: 200px;
-  object-fit: cover;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-}
-
-.topMap h3 {
-  font-size: 30px;
-  font-family: Trip-R, sans-serif;
-}
-
-.topMap p {
-  padding-top: 20px;
-  padding-bottom: 25px;
-  font-size: 15px;
-  font-family: Trip-R, sans-serif;
-}
-
-.voyageButton {
-  padding: 18px;
-  color: white;
-  font-size: 14px;
-  background-color: #333333;
-  width: 150px;
-  border-radius: 20px;
-  text-align: center;
-}
-
-.description {
-  display: flex;
-  justify-content: center;
-}
-
-.mapBox {
-  padding-left: 120px;
-  padding-top: 50px;
-}
-/* MUST SEE SECTION WITHOUT LOGO AND HEART*/
-/* *****************************************/
-.mustSee {
-  padding-top: 30px;
-  display: flex;
-}
-.mustTitle {
-  line-height: 34px;
-  padding-top: 30px;
-}
-h4 {
-  font-size: 24px;
-  line-height: 30px;
-}
-.mustSee p {
-  padding-top: 30px;
-  padding-right: 60px;
-  font-family: Trip-R, sans-serif;
-  font-size: 18px;
-  line-height: 22px;
-  color: #333333;
-}
-
-.items {
-  /* border: 1px solid black; */
-  height: 305px;
-  width: 1800px;
-  display: flex;
-  overflow-x: scroll;
-  gap: 10px;
-}
-
-.items div {
-  width: 270;
-  width: 32.5%;
-  height: 305px;
-  /* border: 1px solid #ff5d5d; */
-  flex-shrink: 0;
-}
-
-.items img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  object-position: top;
-  padding-bottom: 5px;
-}
-
-.items img:hover {
-  opacity: 0.5;
-}
-
-div span {
-  font-size: 18px;
-  line-height: 25px;
-  color: black;
-}
-
-div span:hover {
+.breadcrum a:hover {
   text-decoration: underline;
 }
-/* MUST SEE "DIVERTIR "SECTION WITH LOGO AND HEART*/
+
+.belowPic nav {
+  margin: 20px 0 20px 0;
+}
+
+/* ARTICLE & MAP SECTION */
 /* *****************************************/
-.mustSeeR {
-  padding-top: 30px;
+
+h2 {
+  font-size: 28px;
+}
+
+.article {
+  padding-top: 50px;
+}
+
+.article p {
+  font-size: 20px;
+  font-family: Georgia, sans-serif;
+  color: #333333;
+  line-height: 24px;
+  margin-top: 30px;
+}
+
+.topMap {
+  width: 460px;
+  height: 260px;
+  background-color: #ff5d5d;
+  padding: 30px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.mapBox img {
+  width: 460px;
+  height: 200px;
+  object-fit: cover;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.topMap h3 {
+  font-size: 30px;
+  font-family: Trip-R, sans-serif;
+}
+
+.topMap p {
+  padding-top: 20px;
+  padding-bottom: 25px;
+  font-size: 15px;
+  font-family: Trip-R, sans-serif;
+}
+
+.voyageButton {
+  padding: 18px;
+  color: white;
+  font-size: 14px;
+  background-color: #333333;
+  width: 150px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.description {
   display: flex;
+  justify-content: center;
+}
+
+.mapBox {
+  padding-left: 120px;
+  padding-top: 50px;
+}
+
+/* ARTICLE & MAP SECTION */
+/* *****************************************/
+
+main .capital {
+  padding-top: 60px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+.text {
+  font-size: 20px;
+  font-family: Trip-R, sans-serif;
+  color: #333333;
+  line-height: 24px;
+  margin-top: 30px;
+}
+
+.topMap {
+  width: 460px;
+  height: 260px;
+  background-color: #ff5d5d;
+  padding: 30px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.mapBox img {
+  width: 460px;
+  height: 200px;
+  object-fit: cover;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.topMap h3 {
+  font-size: 30px;
+  font-family: Trip-R, sans-serif;
+}
+
+.topMap p {
+  padding-top: 20px;
+  padding-bottom: 25px;
+  font-size: 15px;
+  font-family: Trip-R, sans-serif;
+}
+
+.voyageButton {
+  padding: 18px;
+  color: white;
+  font-size: 14px;
+  background-color: #333333;
+  width: 150px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+}
+
+.mapBox {
+  padding-left: 120px;
+  padding-top: 50px;
+}
+
+/* MUST SEE SECTION */
+/* ****************************************** */
+.mustSee {
+  /* border: 1px solid black; */
+  height: 350px;
+  display: flex;
+  gap: 15px;
 }
 .mustTitle {
   line-height: 34px;
   padding-top: 30px;
+  margin-bottom: 30px;
 }
 h4 {
   font-size: 24px;
   line-height: 30px;
+  margin-bottom: 30px;
 }
-.mustSeeR p {
-  padding-top: 30px;
+.mustSee p {
   padding-right: 60px;
-  font-family: Trip-R, sans-serif;
+  font-family: Georgia, sans-serif;
   font-size: 18px;
   line-height: 22px;
   color: #333333;
+  padding-bottom: 18px;
 }
 
-.elements {
-  /* border: 1px solid black; */
-  height: 305px;
-  width: 1800px;
+.mustSee a {
+  color: #4b4a4a;
+}
+.mustSee a:hover {
+  color: #828282;
+}
+
+.mustSee > div:first-child {
+  height: 100%;
+  width: 300px;
+}
+
+.mustSee .carrousel {
+  /* border: 1px solid red; */
+  height: 100%;
+  flex: 1;
   display: flex;
+  gap: 15px;
   overflow-x: scroll;
-  gap: 10px;
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
-.elements li {
-  width: 270;
-  width: 32.5%;
-  height: 305px;
-  /* border: 1px solid #ff5d5d; */
+/* Hide scrollbar for Chrome, Safari and Opera */
+.mustSee .carrousel::-webkit-scrollbar {
+  display: none;
+}
+
+.mustSee .item {
+  /* border: 1px solid blue; */
+  height: 100%;
+  width: calc((100% - 30px) / 3);
   flex-shrink: 0;
+}
+.mustSee .item > div {
+  /* border: 1px solid black; */
+  width: 100%;
+  aspect-ratio: 27/ 20;
   position: relative;
 }
-
-.elements i {
-  position: absolute;
-  top: 23px;
-  right: 20px;
-  z-index: 1;
-  font-size: 20px;
+.mustSee .item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
-.elements div {
-  position: absolute;
-  top: 12px;
-  left: 210px;
-  width: 40px;
-  height: 40px;
+.mustSee .cercle {
   background-color: white;
-  border-radius: 50px;
-}
-
-.elements img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
   position: absolute;
-  width: 35px;
-  bottom: 117px;
-  left: 7px;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-li span {
-  font-size: 18px;
-  line-height: 25px;
-  position: relative;
-  top: 200px;
-  color: black;
-}
-li:hover {
+.item img:hover {
   opacity: 0.5;
 }
 
-.elements .dots1 {
-  position: absolute;
-  top: 253px;
-  left: 0px;
-  width: 68px;
+.item h5 {
+  font-size: 18px;
+  line-height: 25px;
+  color: black;
 }
 
-.elements .dots {
-  position: absolute;
-  top: 227px;
-  left: 0px;
-  width: 68px;
+.item .num {
+  font-size: 12px;
+  color: #696969;
+}
+.item .rev {
+  height: 20px;
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.item .rev i {
+  font-size: 50px;
+  color: #3caa6c;
 }
 
-li.bgcImg1 {
-  width: 260px;
-  height: 305px;
-  background-image: url(../img/botanical.jpeg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  padding-bottom: 5px;
+.mustSee .item p {
+  font-family: Trip-R, sans-serif;
+  font-size: 14px;
+  color: #333333;
 }
 
-li.bgcImg2 {
-  width: 260px;
-  height: 305px;
-  background-image: url(../img/cup.jpeg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  padding-bottom: 5px;
+div h5:hover {
+  text-decoration: underline;
 }
-
-li.bgcImg3 {
-  width: 260px;
-  height: 305px;
-  background-image: url(../img/museum.jpeg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  padding-bottom: 5px;
-}
-
-li.bgcImg5 {
-  width: 260px;
-  height: 305px;
-  background-image: url(../img/zoo.jpeg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  padding-bottom: 5px;
-}
-
-li.bgcImg6 {
-  width: 260px;
-  height: 305px;
-  background-image: url(../img/koorie.jpeg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  padding-bottom: 5px;
-}
-
-li.bgcImg8 {
-  width: 260px;
-  height: 305px;
-  background-image: url(../img/ngv.jpeg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  padding-bottom: 5px;
-}
-
-/* MUST SEE "REPOSER" SECTION WITH LOGO AND HEART*/
+/* FOOTER */
 /* *****************************************/
+
+footer {
+  height: 200px;
+}
+
+/* *****************************************/
+/* MEDIA QUERY */
+/* *****************************************/
+
+/* 768 px */
+/* *****************************************/
+
+@media (max-width: 768px) {
+  header {
+    background-color: #ff5d5d;
+
+    margin: 0;
+  }
+  .headerBlock img {
+    width: 130px;
+  }
+
+  header .headerBlock nav {
+    display: none;
+  }
+  header .visibleCart {
+    display: inline;
+  }
+}
