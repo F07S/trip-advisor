@@ -28,6 +28,10 @@ header .headerBlock {
   align-items: center;
 }
 
+header .headerRespA i {
+  display: none;
+}
+
 /* HEADER LOGO */
 /* *****************************************/
 
@@ -467,13 +471,14 @@ footer {
 /* *****************************************/
 
 @media (max-width: 768px) {
+  /* HEADER */
   header {
-    background-color: #ff5d5d;
+    /* background-color: #ff5d5d; */
 
     margin: 0;
   }
   .headerBlock img {
-    width: 130px;
+    width: 135px;
   }
 
   header .headerBlock nav {
@@ -481,5 +486,129 @@ footer {
   }
   header .visibleCart {
     display: inline;
+  }
+  header .headerRespA i {
+    display: inline;
+  }
+  .headerRespA i {
+    font-size: 18px;
+  }
+
+  .headerRespA .headerRight i {
+    margin-right: 12px;
+  }
+  header .headerRespA {
+    /* border: #ededed 1px solid; */
+    width: 68%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
+  }
+
+  /* TOP MAIN SECTION */
+  span {
+    font-size: 36px;
+  }
+  .color {
+    color: #ff5d5d;
+    padding-left: 20px;
+  }
+  .titleNote {
+    padding-left: 20px;
+    font-size: 16px;
+    padding-bottom: 20px;
+  }
+
+  /* TOP MAIN MENU */
+  .categories {
+    width: 768px;
+    flex: 1;
+    display: flex;
+    overflow-x: scroll;
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .categories::-webkit-scrollbar {
+    display: none;
+  }
+
+  .cat-button {
+    height: 40px;
+    width: 200px;
+    align-items: center;
+  }
+
+  .cat-button i {
+    font-size: 12px;
+  }
+
+  /* IMAGE BLOCK */
+  .side {
+    display: none;
+  }
+
+  .pictures {
+    width: 768px;
+    height: 300px;
+    padding-top: 20px;
+    object-fit: cover;
+    /* border: #ff5d5d 2px solid; */
+  }
+  .mapBox {
+    display: none;
+  }
+
+  .belowPic {
+    display: none;
+  }
+
+  .beach:hover {
+    opacity: 5;
+  }
+  /* ARTICLE BLOCK */
+  .description {
+    width: 768px;
+    padding: 20px;
+  }
+  .article {
+    padding-top: 20px;
+  }
+  .article p {
+    font-size: 16px;
+  }
+  /* MUST SEE */
+
+  .mustTitle {
+    padding-left: 20px;
+  }
+  .mustSee > div:first-child {
+    /* border: #ff5d5d 2px solid; */
+    height: 130px;
+    width: 768px;
+  }
+  .mustSee {
+    flex-direction: column;
+    height: 700px;
+    padding-left: 20px;
+  }
+  .mustSee .carrousel {
+    /* border: blue 2px solid; */
+    gap: 15px;
+  }
+
+  .mustSee .item {
+    /* border: blue 2px solid; */
+    width: 600px;
+    flex-grow: 1;
+  }
+  .item img:hover {
+    opacity: 5;
+  }
+  .item h5 {
+    padding-top: 3px;
   }
 }
