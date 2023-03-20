@@ -35,17 +35,29 @@
         </div>
         <nav>
           <a href="#"
-            ><span><i class="fa-solid fa-pencil"></i>Avis</span></a
+            ><span
+              ><i class="fa-solid fa-pencil"></i
+              ><span class="navName">Avis</span></span
+            ></a
           >
           <a href="#"
-            ><span><i class="fa-regular fa-heart"></i>Voyages</span></a
+            ><span
+              ><i class="fa-regular fa-heart"></i
+              ><span class="navName">Voyages</span></span
+            ></a
           >
           <a href="#"
-            ><span><i class="fa-regular fa-bell"></i>Alertes</span></a
+            ><span
+              ><i class="fa-regular fa-bell"></i
+              ><span class="navName">Alertes</span></span
+            ></a
           >
           <button>Connectez-vous</button>
           <a href="#"
-            ><span><i class="fa-solid fa-cart-shopping"></i>Panier</span></a
+            ><span
+              ><i class="fa-solid fa-cart-shopping"></i
+              ><span class="navName">Panier</span></span
+            ></a
           >
         </nav>
       </div>
@@ -110,6 +122,12 @@
         </div>
       </section>
 
+      <img
+        class="beach-display"
+        src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/ba/8d/5f/caption.jpg?w=600&h=500&s=1&cx=4163&cy=2590&chk=v1_a0ed89eeb3b0881fb970"
+        alt=""
+      />
+
       <!-- BREADCRUM SECTION -->
       <div class="belowPic">
         <nav class="breadcrum">
@@ -154,11 +172,12 @@
       </section>
 
       <!-- MUST SEE SECTION  -->
+      <!-- Se Divertir -->
       <h2 class="mustTitle">Melbourne : les immanquables</h2>
       <section class="mustSee">
         <div class="top">
           <h4>Se divertir</h4>
-          <p>
+          <p class="sub-title">
             Des lieux à voir, des rues à explorer et des expériences
             emblématiques à Melbourne.
           </p>
@@ -176,7 +195,7 @@
               <i class="fa-solid fa-ellipsis"></i
               ><span class="num">10 220</span>
             </div>
-            <p>Jardins</p>
+            <p class="item-text">Jardins</p>
           </div>
           <div class="item">
             <div>
@@ -187,7 +206,7 @@
             <div class="rev">
               <i class="fa-solid fa-ellipsis"></i><span class="num">9 083</span>
             </div>
-            <p>Arènes & Stades</p>
+            <p class="item-text">Arènes & Stades</p>
           </div>
           <div class="item">
             <div>
@@ -198,7 +217,7 @@
             <div class="rev">
               <i class="fa-solid fa-ellipsis"></i><span class="num">4 236</span>
             </div>
-            <p>Musées spécialisés</p>
+            <p class="item-text">Musées spécialisés</p>
           </div>
           <div class="item">
             <div>
@@ -210,7 +229,7 @@
               <i class="fa-solid fa-ellipsis"></i
               ><span class="num">18 340</span>
             </div>
-            <p>Tramways</p>
+            <p class="item-text">Tramways</p>
           </div>
           <div class="item">
             <div>
@@ -221,7 +240,7 @@
             <div class="rev">
               <i class="fa-solid fa-ellipsis"></i><span class="num">6 642</span>
             </div>
-            <p>Jardins, Zoos</p>
+            <p class="item-text">Jardins, Zoos</p>
           </div>
           <div class="item">
             <div>
@@ -232,7 +251,167 @@
             <div class="rev">
               <i class="fa-solid fa-ellipsis"></i><span class="num">58</span>
             </div>
-            <p>Musées spécialisés</p>
+            <p class="item-text">Musées spécialisés</p>
+          </div>
+        </div>
+      </section>
+      <!-- Se Reposer -->
+
+      <section class="mustSee">
+        <div class="top">
+          <h4>Se reposer</h4>
+          <p class="sub-title">
+            Un mélange de charme, de symboles et de modernité.
+          </p>
+          <a href="#">Tout afficher</a>
+        </div>
+
+        <div class="carrousel">
+          <div class="item">
+            <div>
+              <img src="./assets/img/treasury.jpeg" alt="" />
+              <div class="cercle"><i class="fa-regular fa-heart"></i></div>
+            </div>
+            <h5>Treasury on Collins</h5>
+            <div class="rev">
+              <i class="fa-solid fa-ellipsis"></i><span class="num">2 027</span>
+            </div>
+          </div>
+          <div class="item">
+            <div>
+              <img src="./assets/img/langham.jpeg" alt="" />
+              <div class="cercle"><i class="fa-regular fa-heart"></i></div>
+            </div>
+            <h5>The Langham, Melbourne</h5>
+            <div class="rev">
+              <i class="fa-solid fa-ellipsis"></i><span class="num">7 557</span>
+            </div>
+          </div>
+          <div class="item">
+            <div>
+              <img src="./assets/img/cullen.jpeg" alt="" />
+              <div class="cercle"><i class="fa-regular fa-heart"></i></div>
+            </div>
+            <h5>The Cullen, Prahan</h5>
+            <div class="rev">
+              <i class="fa-solid fa-ellipsis"></i><span class="num">1 710</span>
+            </div>
+          </div>
+          <div class="item">
+            <div>
+              <img src="./assets/img/qt-melbourne.jpeg" alt="" />
+              <div class="cercle"><i class="fa-regular fa-heart"></i></div>
+            </div>
+            <h5>QT Melbourne</h5>
+            <div class="rev">
+              <i class="fa-solid fa-ellipsis"></i><span class="num">2 610</span>
+            </div>
+          </div>
+          <div class="item">
+            <div>
+              <img src="./assets/img/adelphi.jpeg" alt="" />
+              <div class="cercle"><i class="fa-regular fa-heart"></i></div>
+            </div>
+            <h5>Adelphi Hotel</h5>
+            <div class="rev">
+              <i class="fa-solid fa-ellipsis"></i><span class="num">1 923</span>
+            </div>
+          </div>
+          <div class="item">
+            <div>
+              <img src="./assets/img/ovolo-laneways.jpg" alt="" />
+              <div class="cercle"><i class="fa-regular fa-heart"></i></div>
+            </div>
+            <h5>Laneways By Ovolo</h5>
+            <div class="rev">
+              <i class="fa-solid fa-ellipsis"></i><span class="num">1 550</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Se Restaurer -->
+      <section class="mustSee">
+        <div class="top">
+          <h4>Se restaurer</h4>
+          <p class="sub-title">
+            Des restaurants et bars typiques, et plus encore à Melbourne.
+          </p>
+          <a href="#">Tout afficher</a>
+        </div>
+        <div class="carrousel">
+          <div class="item">
+            <div>
+              <img src="./assets/img/scopri.jpeg" alt="" />
+              <div class="cercle"><i class="fa-regular fa-heart"></i></div>
+            </div>
+            <h5>Scopri</h5>
+            <div class="rev">
+              <i class="fa-solid fa-ellipsis"></i><span class="num">1 038</span>
+            </div>
+            <p class="item-text">
+              €€ - €€€ • Italienne, Végétariens bienvenus, Choix végétaliens
+            </p>
+          </div>
+          <div class="item">
+            <div>
+              <img src="./assets/img/betty.jpeg" alt="" />
+              <div class="cercle"><i class="fa-regular fa-heart"></i></div>
+            </div>
+            <h5>Betty’s Burgers & Concrete Co</h5>
+            <div class="rev">
+              <i class="fa-solid fa-ellipsis"></i><span class="num">1 200</span>
+            </div>
+            <p class="item-text">€ • Repas sur le pouce, Américaine, Diner</p>
+          </div>
+          <div class="item">
+            <div>
+              <img src="./assets/img/chinchin.jpeg" alt="" />
+              <div class="cercle"><i class="fa-regular fa-heart"></i></div>
+            </div>
+            <h5>Chin Chin</h5>
+            <div class="rev">
+              <i class="fa-solid fa-ellipsis"></i><span class="num">5 971</span>
+            </div>
+            <p class="item-text">
+              €€ - €€€ • Asiatique, Thaï, Végétariens bienvenus
+            </p>
+          </div>
+          <div class="item">
+            <div>
+              <img src="./assets/img/cutler-co.jpg" alt="" />
+              <div class="cercle"><i class="fa-regular fa-heart"></i></div>
+            </div>
+            <h5>Cutler & Co</h5>
+            <div class="rev">
+              <i class="fa-solid fa-ellipsis"></i><span class="num">680</span>
+            </div>
+            <p class="item-text">
+              €€€€ • Australienne, Internationale, Végétariens bienvenus
+            </p>
+          </div>
+          <div class="item">
+            <div>
+              <img src="./assets/img/hardware-lane.jpeg" alt="" />
+              <div class="cercle"><i class="fa-regular fa-heart"></i></div>
+            </div>
+            <h5>Hardware Lane</h5>
+            <div class="rev">
+              <i class="fa-solid fa-ellipsis"></i><span class="num">509</span>
+            </div>
+            <p class="item-text">Monuments & Points d'intérêt</p>
+          </div>
+          <div class="item">
+            <div>
+              <img src="./assets/img/top-paddock.jpg" alt="" />
+              <div class="cercle"><i class="fa-regular fa-heart"></i></div>
+            </div>
+            <h5>Top Paddock</h5>
+            <div class="rev">
+              <i class="fa-solid fa-ellipsis"></i><span class="num">694</span>
+            </div>
+            <p class="item-text">
+              €€ - €€€ • Café, Australienne, Végétariens bienvenus
+            </p>
           </div>
         </div>
       </section>

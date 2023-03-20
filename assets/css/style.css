@@ -2,7 +2,7 @@
 /* *****************************************/
 
 body {
-  font-family: Trip-M, sans-serif;
+  font-family: "Trip-M", sans-serif;
   width: 1135px;
   margin: 0 auto;
   /* background-color: grey; */
@@ -171,6 +171,10 @@ main nav a {
 }
 .flinders:hover {
   opacity: 0.5;
+}
+
+.beach-display {
+  display: none;
 }
 
 /* BREADCRUMB */
@@ -350,15 +354,22 @@ h2 {
 h4 {
   font-size: 24px;
   line-height: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
-.mustSee p {
+.sub-title {
   padding-right: 60px;
   font-family: Georgia, sans-serif;
   font-size: 18px;
   line-height: 22px;
   color: #333333;
   padding-bottom: 18px;
+}
+.mustSee .carrousel .item-text {
+  font-size: 13px;
+  line-height: 18px;
+  color: #333333;
+  padding-bottom: 18px;
+  /* border: 1px solid red; */
 }
 
 .mustSee a {
@@ -427,6 +438,7 @@ h4 {
 
 .item h5 {
   font-size: 18px;
+  margin-top: 5px;
   line-height: 25px;
   color: black;
 }
@@ -447,8 +459,12 @@ h4 {
   color: #3caa6c;
 }
 
+.item .cercle i {
+  font-size: 20px;
+}
+
 .mustSee .item p {
-  font-family: Trip-R, sans-serif;
+  font-family: "Trip-R", sans-serif;
   font-size: 14px;
   color: #333333;
 }
@@ -463,6 +479,76 @@ footer {
   height: 200px;
 }
 
+/* ****************************************
+/* MEDIA QUERY */
+/* *****************************************/
+
+/* 1024 px */
+/* *****************************************/
+
+/* HEADER */
+@media (max-width: 1024px) {
+  header {
+    max-width: 1024px;
+  }
+
+  header .headerBlock {
+    max-width: 1024px;
+    padding-left: 20px;
+  }
+
+  header nav .navName {
+    display: none;
+  }
+
+  header nav i {
+    display: inline;
+    font-size: 20px;
+  }
+
+  /* MAIN */
+  main {
+    max-width: 1024px;
+    padding: 150px 25px 0 25px;
+  }
+  .mapBox {
+    display: none;
+  }
+
+  /* TOP MAIN MENU */
+  .categories {
+    max-width: 1024px;
+    margin-top: 20px;
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .cat-button {
+    width: 235px;
+  }
+
+  /* IMAGE BLOCK */
+  /* *****************************************/
+
+  .pictures {
+    height: 330px;
+  }
+
+  /* MUST SEE */
+  .mustSee .carrousel {
+    /* border: blue 2px solid; */
+    gap: 10px;
+    max-width: 1024px;
+  }
+
+  .mustSee .item {
+    /* border: blue 2px solid; */
+    width: 270px;
+    height: 300px;
+    flex-grow: 1;
+  }
+}
+
 /* *****************************************/
 /* MEDIA QUERY */
 /* *****************************************/
@@ -473,12 +559,13 @@ footer {
 @media (max-width: 768px) {
   /* HEADER */
   header {
-    /* background-color: #ff5d5d; */
-
-    margin: 0;
+    /* border: 1px solid red; */
+    width: 768px;
+    margin: 0 auto;
+    padding-bottom: 15px;
   }
   .headerBlock img {
-    width: 135px;
+    max-width: 160px;
   }
 
   header .headerBlock nav {
@@ -498,33 +585,41 @@ footer {
     margin-right: 12px;
   }
   header .headerRespA {
-    /* border: #ededed 1px solid; */
-    width: 68%;
+    width: 100%;
+    /* border: 1px solid blue; */
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px 0 20px;
+    padding-right: 10px;
   }
 
   /* TOP MAIN SECTION */
+  main {
+    padding-top: 110px;
+    background-color: white;
+  }
   span {
-    font-size: 36px;
+    font-size: 32px;
+    font-weight: bold;
   }
   .color {
     color: #ff5d5d;
-    padding-left: 20px;
   }
   .titleNote {
-    padding-left: 20px;
     font-size: 16px;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
   }
 
+  .titleNote {
+    font-size: 14px;
+  }
   /* TOP MAIN MENU */
   .categories {
-    width: 768px;
+    width: 720px;
     flex: 1;
+    margin-top: 0px;
     display: flex;
+    flex-wrap: nowrap;
     overflow-x: scroll;
     /* Hide scrollbar for IE, Edge and Firefox */
     -ms-overflow-style: none; /* IE and Edge */
@@ -552,10 +647,15 @@ footer {
   }
 
   .pictures {
-    width: 768px;
+    display: none;
+  }
+  .beach-display {
+    display: inline;
+    width: 720px;
     height: 300px;
-    padding-top: 20px;
     object-fit: cover;
+    object-position: center;
+    margin-top: 15px;
     /* border: #ff5d5d 2px solid; */
   }
   .mapBox {
@@ -571,20 +671,17 @@ footer {
   }
   /* ARTICLE BLOCK */
   .description {
-    width: 768px;
-    padding: 20px;
+    width: 720px;
   }
   .article {
-    padding-top: 20px;
+    padding-top: 30px;
   }
   .article p {
     font-size: 16px;
+    margin-top: 15px;
   }
   /* MUST SEE */
 
-  .mustTitle {
-    padding-left: 20px;
-  }
   .mustSee > div:first-child {
     /* border: #ff5d5d 2px solid; */
     height: 130px;
@@ -592,17 +689,18 @@ footer {
   }
   .mustSee {
     flex-direction: column;
-    height: 700px;
-    padding-left: 20px;
+    height: 500px;
   }
   .mustSee .carrousel {
     /* border: blue 2px solid; */
-    gap: 15px;
+    gap: 10px;
+    width: 720px;
   }
 
   .mustSee .item {
     /* border: blue 2px solid; */
-    width: 600px;
+    width: 270px;
+    height: 300px;
     flex-grow: 1;
   }
   .item img:hover {
@@ -610,5 +708,71 @@ footer {
   }
   .item h5 {
     padding-top: 3px;
+  }
+}
+
+/* *****************************************/
+/* MEDIA QUERY */
+/* *****************************************/
+
+/* 393 px */
+/* *****************************************/
+
+@media (max-width: 393px) {
+  /* HEADER */
+  header {
+    /* border: 1px solid red; */
+    width: 393px;
+    margin: 0 auto;
+    padding-bottom: 15px;
+  }
+  .headerBlock img {
+    width: 120px;
+  }
+
+  /* TOP MAIN SECTION */
+
+  .titleNote {
+    width: 380px;
+    line-height: 18px;
+  }
+
+  /* TOP MAIN MENU */
+  .categories {
+    width: 380px;
+  }
+
+  /* IMAGE BLOCK */
+
+  .beach-display {
+    width: 360px;
+  }
+
+  /* ARTICLE BLOCK */
+  .description {
+    width: 340px;
+  }
+
+  /* MUST SEE */
+
+  .mustSee > div:first-child {
+    /* border: #ff5d5d 2px solid; */
+    height: 170px;
+    width: 360px;
+  }
+  .mustTitle {
+    width: 360px;
+  }
+  .mustSee {
+    flex-direction: column;
+    height: 500px;
+  }
+  .mustSee .carrousel {
+    /* border: blue 2px solid; */
+    gap: 10px;
+    width: 380px;
+  }
+  footer {
+    height: 200px;
   }
 }
